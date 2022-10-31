@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+
+<body>
+    <script src="js/arrayFilter.js"></script>
+
+    <script>
+        const arrItem = ['1', '2', '3', '4', '5'];
+        const arrFilter = new ArrayFilter(arrItem);
+
+        function test() {
+            let arr = arrFilter._array;
+            console.log(arr);
+
+            arr = arrFilter.add('6');
+            console.log(arr);
+
+            arr = arrFilter.remove('3');
+            console.log(arr);
+
+        }
+
+        test();
+    </script>
+</body>
+
+</html>
